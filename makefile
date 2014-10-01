@@ -1,5 +1,5 @@
 #kd8bny Makefile
-#Project: pi2go
+#Project: pyqtWidgets
 #V1 R5
 
 clean:
@@ -25,7 +25,7 @@ update:
 	@ echo "*** Complete ***"
 
 run:
-	@ cd sudo python2.7 ui_mainwindow.py
+	@ sudo python2.7 main_application.py
 
 build:
 	@ echo "*** Utilizing pyuic4 ***"
