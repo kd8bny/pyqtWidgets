@@ -9,9 +9,9 @@ clean:
 	@ echo "*** Complete ***"
 
 install:
-	@ export PYQTDESIGNERPATH=$(pwd)/python
-	@ export PYTHONPATH=$PYTHONPATH:$(pwd)/widget
-	designer-qt4
+	@ export PYQTDESIGNERPATH=$(CURDIR)/python &&\
+		export PYTHONPATH=$PYTHONPATH:$(CURDIR)/widget &&\
+		designer-qt4
 
 prereq:
 	@ echo "*** Installing Prerequisites... Standby ***"
