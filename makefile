@@ -4,12 +4,13 @@
 
 clean:
 	@ echo "*** Removing all temp files ***"
-	@ rm -f *.pyc
-	@ rm -f *~
+	@ rm -f *.pyc && rm -f *~
+	@ cd plugin && rm -f *.pyc && rm -f *~
+	@ cd widget && rm -f *.pyc && rm -f *~
 	@ echo "*** Complete ***"
 
 install:
-	@ export PYQTDESIGNERPATH=$(CURDIR)/python &&\
+	@ export PYQTDESIGNERPATH=$(CURDIR)/plugin &&\
 		export PYTHONPATH=$PYTHONPATH:$(CURDIR)/widget &&\
 		designer-qt4
 

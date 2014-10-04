@@ -1,6 +1,6 @@
 from PyQt4.QtDesigner import QPyDesignerCustomWidgetPlugin
 from PyQt4.QtGui import QIcon
-from testwidget import TestWidget
+from speedoWidget import speedoWidget
 
 
 class TestWidgetPlugin(QPyDesignerCustomWidgetPlugin):
@@ -8,10 +8,10 @@ class TestWidgetPlugin(QPyDesignerCustomWidgetPlugin):
 		QPyDesignerCustomWidgetPlugin.__init__(self)
 
 	def name(self):
-		return 'TestWidget'
+		return 'speedoWidget'
 
 	def group(self):
-		return 'Fapiko.Com Example Widgets'
+		return 'kd8bny'
 
 	def icon(self):
 		return QIcon()
@@ -20,13 +20,13 @@ class TestWidgetPlugin(QPyDesignerCustomWidgetPlugin):
 		return False
 
 	def includeFile(self):
-		return 'testwidget'
+		return 'speedoWidget'
 
 	def toolTip(self):
-		return 'Arnold Facepalmer'
+		return 'Speedometer'
 
 	def whatsThis(self):
-		return 'Facepalm all day'
+		return 'Speedometer'
 
 	def createWidget(self, parent):
-		return TestWidget(parent)
+		return speedoWidget(parent)

@@ -1,7 +1,8 @@
-#PyQt TestWidget
+#pyqtWidgets
+This is a fork from [github](https://github.com/Fapiko/pyqt-testwidget). Purpose is to create custom widgets to use in future projects. Starting with [pi2go](https://github.com/kd8bny/pi2go).
 
-Small repository to demonstrate creating a custom PyQt widget which can be used in the Qt Designer.
+##Instructions
+TBD
 
-If you're interested in more info, check out the short blog post I created to accompany this repository at: http://www.fapiko.com/custom-pyqt4-widget-designer-plugin/
-
-Fork from https://github.com/Fapiko/pyqt-testwidget
+##Info
+- plugin must be all lowercase for qtdesigner to recognize
