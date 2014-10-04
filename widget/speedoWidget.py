@@ -26,6 +26,7 @@ class speedoWidget(QtGui.QWidget):
 
         self.needle = QtGui.QPolygon([
             QtCore.QPoint(1, 0),
+            QtCore.QPoint(0, 1),
             QtCore.QPoint(-1, 0),
             QtCore.QPoint(0, -50)
             ])
@@ -57,22 +58,22 @@ class speedoWidget(QtGui.QWidget):
         qtpaint.setPen(QtCore.Qt.NoPen)
         qtpaint.setBrush(QtGui.QBrush(self.needleColor))
         qtpaint.rotate(-90 + self.speed)
-
+        
         qtpaint.drawConvexPolygon(self.needle)
         qtpaint.restore()
 
         #Tick marks
         qtpaint.setPen(self.tickColor)
 
-        for i in range(0, 19):
+        qtpaint.rotate(-15.0)
+        for i in range(0, 11):
             qtpaint.drawLine(50, 0, 47, 0)
-            qtpaint.rotate(-10.0)
+            qtpaint.rotate(-15.0)
 
         qtpaint.end()
 
     @QtCore.pyqtSlot(int)
     def updateValue(self, speed):
-        print "made it"
         self.speed = speed
         self.update()
 
@@ -82,5 +83,5 @@ if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
     widget = speedoWidget()
     widget.show()
-    widget.speedChange.emit(20)
+    widget.speedChange.emit(90)
     sys.exit(app.exec_())

@@ -6,3 +6,7 @@ TBD
 
 ##Info
 - plugin must be all lowercase for qtdesigner to recognize
+
+##Widgets
+##Speedometer
+
