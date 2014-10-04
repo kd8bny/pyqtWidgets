@@ -1,9 +1,11 @@
 from PyQt4.QtDesigner import QPyDesignerCustomWidgetPlugin
 from PyQt4.QtGui import QIcon
+
 from speedoWidget import speedoWidget
 
 
-class TestWidgetPlugin(QPyDesignerCustomWidgetPlugin):
+class kd8bny_speedometer(QPyDesignerCustomWidgetPlugin):
+	
 	def __init__(self, parent=None):
 		QPyDesignerCustomWidgetPlugin.__init__(self)
 
