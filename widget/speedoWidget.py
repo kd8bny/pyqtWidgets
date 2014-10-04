@@ -18,7 +18,7 @@ class speedoWidget(QtGui.QWidget):
         self.speedChange.connect(self.updateValue)
 
         self.setWindowTitle(QtCore.QObject.tr(self, "kd8bny Speedometer"))
-        self.resize(500, 500)
+        self.resize(200, 200)
 
         self.rect = QtCore.QRect(-50,-50,100,100)
         self.startAngle = 0 * 16
@@ -57,7 +57,7 @@ class speedoWidget(QtGui.QWidget):
         #Needle
         qtpaint.setPen(QtCore.Qt.NoPen)
         qtpaint.setBrush(QtGui.QBrush(self.needleColor))
-        qtpaint.rotate(-90 + self.speed)
+        qtpaint.rotate(-90 + (self.speed/10) * 15)
         
         qtpaint.drawConvexPolygon(self.needle)
         qtpaint.restore()
@@ -83,5 +83,5 @@ if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
     widget = speedoWidget()
     widget.show()
-    widget.speedChange.emit(90)
+    widget.speedChange.emit(60)
     sys.exit(app.exec_())

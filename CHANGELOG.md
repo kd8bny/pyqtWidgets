@@ -1,6 +1,7 @@
 #10-3-14
 - Fixed makefile issues
 - Speedometer Made!
-##round 2
 - Fixed tick marks
+#10-4-14
 - Cleaned image
+- Fixed proper values
