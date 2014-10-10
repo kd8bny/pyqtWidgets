@@ -7,7 +7,7 @@
 from PyQt4 import QtGui, QtCore
 
 
-class speedoWidget(QtGui.QWidget):
+class speedowidget(QtGui.QWidget):
 
     speedChange = QtCore.pyqtSignal(int)
 

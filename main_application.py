@@ -8,8 +8,7 @@ class TestDialog(QDialog):
 		QDialog.__init__(self)
 		mainWindow = Ui_TestDialog()
 		mainWindow.setupUi(self)
-		mainWindow.testwidget.testMethod()
-		mainWindow.testwidget.setText("'Ello, govna!")
+		mainWindow.speedowidget.updateValue(60)
 
 app = QApplication(sys.argv)
 test = TestDialog()

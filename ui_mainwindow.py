@@ -2,8 +2,8 @@
 
 # Form implementation generated from reading ui file 'main_window.ui'
 #
-# Created: Sun Aug 18 00:28:53 2013
-#      by: PyQt4 UI code generator 4.10
+# Created: Thu Oct  9 21:15:06 2014
+#      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -32,9 +32,9 @@ class Ui_TestDialog(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(TestDialog.sizePolicy().hasHeightForWidth())
         TestDialog.setSizePolicy(sizePolicy)
-        self.testwidget = TestWidget(TestDialog)
-        self.testwidget.setGeometry(QtCore.QRect(120, 110, 131, 51))
-        self.testwidget.setObjectName(_fromUtf8("testwidget"))
+        self.speedowidget = speedoWidget(TestDialog)
+        self.speedowidget.setGeometry(QtCore.QRect(20, 40, 341, 191))
+        self.speedowidget.setObjectName(_fromUtf8("speedowidget"))
 
         self.retranslateUi(TestDialog)
         QtCore.QMetaObject.connectSlotsByName(TestDialog)
@@ -42,4 +42,4 @@ class Ui_TestDialog(object):
     def retranslateUi(self, TestDialog):
         TestDialog.setWindowTitle(_translate("TestDialog", "Dialog", None))
 
-from testwidget import TestWidget
+from speedoWidget import speedoWidget

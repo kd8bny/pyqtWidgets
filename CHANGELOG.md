@@ -5,3 +5,7 @@
 #10-4-14
 - Cleaned image
 - Fixed proper values
+#10-9-14
+- Fixed class name
+	-- Important to how QTdesginer build dependencies
+- Fixed testing ui

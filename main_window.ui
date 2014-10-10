@@ -19,22 +19,22 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="TestWidget" name="testwidget">
+  <widget class="speedoWidget" name="speedowidget">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>110</y>
-     <width>131</width>
-     <height>51</height>
+     <x>20</x>
+     <y>40</y>
+     <width>341</width>
+     <height>191</height>
     </rect>
    </property>
   </widget>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>TestWidget</class>
-   <extends>QLabel</extends>
-   <header>testwidget</header>
+   <class>speedoWidget</class>
+   <extends>QWidget</extends>
+   <header>speedoWidget</header>
   </customwidget>
  </customwidgets>
  <resources/>
