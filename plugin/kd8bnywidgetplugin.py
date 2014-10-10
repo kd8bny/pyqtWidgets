@@ -1,3 +1,12 @@
+#Custom designed pyqtwidgets
+#Daryl W. Bennett --kd8bny@gmail.com
+#Purpose is to have a custom UI
+
+#plugin must be all lowercase for qtdesigner to recognize
+
+#R1
+
+
 from PyQt4.QtDesigner import QPyDesignerCustomWidgetPlugin
 from PyQt4.QtGui import QIcon
 

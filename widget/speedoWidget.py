@@ -12,7 +12,7 @@ class speedowidget(QtGui.QWidget):
     speedChange = QtCore.pyqtSignal(int)
 
     def __init__(self, parent=None):
-        super(speedoWidget, self).__init__(parent)
+        super(speedowidget, self).__init__(parent)
 
         self.speedChange.connect(self.update)
         self.speedChange.connect(self.updateValue)
@@ -72,16 +72,21 @@ class speedowidget(QtGui.QWidget):
 
         qtpaint.end()
 
+        return
+
     @QtCore.pyqtSlot(int)
     def updateValue(self, speed):
-        self.speed = speed
-        self.update()
+        if speed >= 0 and speed <= 120:
+            self.speed = speed
+            self.update()
+
+        return
 
 if __name__ == "__main__":
     import sys
 
     app = QtGui.QApplication(sys.argv)
-    widget = speedoWidget()
+    widget = speedowidget()
     widget.show()
     widget.speedChange.emit(60)
     sys.exit(app.exec_())
