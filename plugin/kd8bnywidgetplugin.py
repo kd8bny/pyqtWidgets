@@ -10,7 +10,7 @@
 from PyQt4.QtDesigner import QPyDesignerCustomWidgetPlugin
 from PyQt4.QtGui import QIcon
 
-from speedoWidget import speedoWidget
+from speedowidget import speedowidget
 
 
 class kd8bny_speedometer(QPyDesignerCustomWidgetPlugin):
@@ -19,7 +19,7 @@ class kd8bny_speedometer(QPyDesignerCustomWidgetPlugin):
 		QPyDesignerCustomWidgetPlugin.__init__(self)
 
 	def name(self):
-		return 'speedoWidget'
+		return 'speedowidget'
 
 	def group(self):
 		return 'kd8bny'
@@ -31,7 +31,7 @@ class kd8bny_speedometer(QPyDesignerCustomWidgetPlugin):
 		return False
 
 	def includeFile(self):
-		return 'speedoWidget'
+		return 'speedowidget'
 
 	def toolTip(self):
 		return 'Speedometer'
@@ -40,4 +40,4 @@ class kd8bny_speedometer(QPyDesignerCustomWidgetPlugin):
 		return 'Speedometer'
 
 	def createWidget(self, parent):
-		return speedoWidget(parent)
+		return speedowidget(parent)
